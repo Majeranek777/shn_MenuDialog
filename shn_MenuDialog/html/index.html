@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fortawesome.com/kits/1ce05b4b/publications/124411/woff2.css" media="all">
+    <script src="jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <script src="script.js" type="text/javascript"></script>
+    <div class="container">
+        <div class="karta">
+            <div class="glowny">
+                <i class="top fa-solid ikona fa-comment fa-flip-horizontal fa-xl"></i><span class="top nazwa">Nieznajomy</span>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis natus perferendis tenetur quod molestiae modi dignissimos officiis, adipisci aspernatur quo amet aliquid mollitia delectus tempore, eum consequatur. Veritatis, unde quidem.</p>
+            </div> 
+            <div class="wrapper">
+                <input class="block i1" type="password"><button class="block button" onclick="input()"><i class="fa-solid fa-square-check fa-2xl"></i></button>
+                <button class="block b1" onclick="buttonpress('1')"><i class="fa-solid ikona fa-circle-1 fa-fw fa-2xl"></i><span class="button1">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span></button>          
+                <button class="block b2" onclick="buttonpress('2')"><i class="fa-solid ikona fa-circle-2 fa-fw fa-2xl"></i><span class="button2">Lorem Ipsum</span></button>               
+                <button class="block b3" onclick="buttonpress('3')"><i class="fa-solid ikona fa-circle-3 fa-fw fa-2xl"></i><span class="button3">Lorem Ipsum</span></button>
+                <button class="block b4" onclick="buttonpress('4')"><i class="fa-solid ikona fa-circle-4 fa-fw fa-2xl"></i><span class="button4">Lorem Ipsum</span></button>
+                <button class="block b5" onclick="buttonpress('5')"><i class="fa-solid ikona fa-circle-5 fa-fw fa-2xl"></i><span class="button5">Lorem Ipsum</span></button>
+                <button class="block b6" onclick="buttonpress('6')"><i class="fa-solid ikona fa-circle-6 fa-fw fa-2xl"></i><span class="button6">Lorem Ipsum</span></button>
+                <button class="block b7" onclick="buttonpress('7')"><i class="fa-solid ikona fa-circle-6 fa-fw fa-2xl"></i><span class="button6">Lorem Ipsum</span></button>                
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function input(){
+        let data = document.getElementsByClassName("i1")[0].value;
+        $.post('https://shn_q/accept', JSON.stringify({data}));
+        quest.next();
+    }
+
+    function buttonpress(data){
+        $.post('https://shn_q/accept', JSON.stringify({data}));
+        quest.next();
+    }
+    </script>
+</body>
+</html>

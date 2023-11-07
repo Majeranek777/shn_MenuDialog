@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+:root {
+    --text-box: #0000007c;
+    --button-text: #183153;
+    --button-background: #fff;
+    --button-shadow: #65c9f0;
+    --button-hover: #1FB1E9;
+    --button-hover-text: white;
+    --button-active-background: #1180ab;
+    --button-active-shadow: #0c5d7d;
+    --input-button-background: #63e6be;
+    --input-button-shadow: #189871;
+    --input-button-hover: #116c50;
+    --input-button-active-shadow: #0e5640;
+}
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    overflow: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.karta{
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 700px;
+    color: var(--button-hover-text);
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.glowny{
+    background-color: var(--text-box);
+    position: relative;
+    padding: 1rem;
+    padding-left: 1.2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom:2dvh;
+}
+
+.wrapper{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    margin-bottom: 6dvh;
+}
+
+.block{
+    border: none;
+    border-radius: 9px;
+    width: 32dvw;
+    margin: 0 0 1.5dvh 0;
+    text-align: left;
+    box-shadow: 0.250em 0.375em 0 var(--button-shadow);
+    background: var(--button-background);
+    cursor: pointer;
+    padding: 1.5dvh;
+    padding-top: 1.79dvh;
+    color: var(--button-text);
+    font-weight: 600;
+    display: none;
+}
+
+.button{
+    font-size: 16px;
+    padding: 1.4dvh;
+    height: 5.2dvh;
+    color: var(--button-text);
+    width: auto;
+    background: var(--input-button-background);
+    box-shadow: 0.250em 0.375em 0 var(--input-button-shadow);
+}
+
+.i1{
+    width: 28.5dvw;
+    margin-right: 0.5dvw;
+}
+
+
+.block:hover{
+    background: var(--button-hover);
+    color: var(--button-hover-text);
+    box-shadow: 0.250em 0.375em 0 var(--button-active-background);
+}
+
+.block:active{
+    background: var(--button-active-background);
+    box-shadow: 0.250em 0.375em 0 var(--button-active-shadow);
+}
+
+.button:hover{
+    background: var(--input-button-shadow);
+    color: var(--button-text);
+    box-shadow: 0.250em 0.375em 0 var(--input-button-hover);
+}
+
+.button:active{
+    background: var(--input-button-hover);
+    box-shadow: 0.250em 0.375em 0 var(--input-button-active-shadow);
+}
+
+
+.ikona{
+    margin-right:10px;
+}
+
+.top{
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+
+.fa-comment{
+    margin-right:10px;
+}
+
+*:focus {
+    outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  border: none;
+  margin: 0;
+}
